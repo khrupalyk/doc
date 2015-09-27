@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>React Tutorial</title>
+    <script src="../"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="content"></div>
+
+<script type="text/babel">
+    var ExampleApplication = React.createClass({
+        render: function() {
+            var elapsed = Math.round(this.props.elapsed  / 100);
+            var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+            var message =
+                    'React has been successfully running for ' + seconds + ' seconds.';
+
+            return React.DOM.p(null, message);
+        }
+    });
+
+    // Call React.createFactory instead of directly call ExampleApplication({...}) in React.render
+    var ExampleApplicationFactory = React.createFactory(ExampleApplication);
+
+    var start = new Date().getTime();
+    setInterval(function() {
+        React.render(
+                ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
+                document.getElementById('container')
+        );
+    }, 50);
+</script>
+</body>
