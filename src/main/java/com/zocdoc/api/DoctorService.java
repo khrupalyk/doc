@@ -1,6 +1,6 @@
 package com.zocdoc.api;
 
-import com.zocdoc.models.Doctor;
+import com.zocdoc.models.*;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -22,10 +22,11 @@ public class DoctorService implements Serializable {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Doctor> getDoctors() {
 
+
         ArrayList<Doctor> doctors = new ArrayList<>();
-        doctors.add(new Doctor("Antoha"));
-        doctors.add(new Doctor("Ivan"));
-        doctors.add(new Doctor("Vasiliy"));
+        doctors.add(new Doctor("AntohaG"));
+        doctors.add(new Doctor("IvanG"));
+        doctors.add(new Doctor("VasiliyG"));
 
         return doctors;
     }
