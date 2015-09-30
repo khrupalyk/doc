@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ZocDoc:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="zocdoc.war">
-      <element id="artifact" artifact-name="ZocDoc:war exploded" />
-    </root>
-  </artifact>
-</component>
