@@ -24,9 +24,9 @@ public class DoctorService implements Serializable {
 
 
         ArrayList<Doctor> doctors = new ArrayList<>();
-        doctors.add(new Doctor("AntohaG"));
-        doctors.add(new Doctor("IvanG"));
-        doctors.add(new Doctor("VasiliyG"));
+        doctors.add(new Doctor());
+        doctors.add(new Doctor());
+        doctors.add(new Doctor());
 
         return doctors;
     }

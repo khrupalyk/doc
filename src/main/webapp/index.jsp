@@ -11,12 +11,12 @@
 <head>
     <title></title>
 
-    <script src="<c:url value="/resources/js/react/react.js" />"></script>
-    <script src="<c:url value="/resources/js/react/JSXTransformer.js" />"></script>
-    <script src="<c:url value="/resources/js/react/react-with-addons.min.js" />"></script>
-    <script src="<c:url value="/resources/js/jquery/jquery-1.11.3.min.js" />"></script>
-    <script src="<c:url value="/resources/js/components/DoctorTemplate.jsx" />" type="text/jsx"></script>
-    <script src="<c:url value="/resources/js/components/DoctorsTemplate.jsx" />" type="text/jsx"></script>
+    <script src="<c:url value="/static/js/react/react.js" />"></script>
+    <script src="<c:url value="/static/js/react/JSXTransformer.js" />"></script>
+    <script src="<c:url value="/static/js/react/react-with-addons.min.js" />"></script>
+    <script src="<c:url value="/static/js/jquery/jquery-1.11.3.min.js" />"></script>
+    <script src="<c:url value="/static/js/components/DoctorTemplate.jsx" />" type="text/jsx"></script>
+    <script src="<c:url value="/static/js/components/DoctorsTemplate.jsx" />" type="text/jsx"></script>
 
 
     <%--<title>jQuery UI Datepicker - Default functionality</title>--%>
