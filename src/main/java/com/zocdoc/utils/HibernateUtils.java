@@ -7,6 +7,8 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import javax.enterprise.inject.Produces;
+
 /**
  * Created by root on 30.09.15.
  */
@@ -28,6 +30,7 @@ public class HibernateUtils {
         }
     }
 
+    @Produces
     public static SessionFactory getSessionFactory() throws HibernateException {
         return ourSessionFactory;
     }

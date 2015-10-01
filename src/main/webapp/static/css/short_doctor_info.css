@@ -1,0 +1,54 @@
+.image-block {
+    width: 150px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.doc-info-small {
+    margin-left: 10px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.doc-info-block {
+    height: 185px;
+    padding: 10px;
+}
+
+.doc-name {
+    position: relative;
+    font-size: 22px;
+    color: #00aac6;
+}
+
+.doc-image {
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.speciality  {
+    font-weight: 700;
+    line-height: 12px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    margin-top: 5px;
+}
+
+.doc-row {
+    border-left: 1px solid #A9A9A9;
+    border-right: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+    width: 600px;
+}
+
+.first-row {
+    border-top: 1px solid #A9A9A9;
+}
+
+.address {
+    margin-top: 5px;
+    width: 400px;
+}
+

@@ -17,6 +17,7 @@
     <script src="<c:url value="/static/js/jquery/jquery-1.11.3.min.js" />"></script>
     <script src="<c:url value="/static/js/components/DoctorTemplate.jsx" />" type="text/jsx"></script>
     <script src="<c:url value="/static/js/components/DoctorsTemplate.jsx" />" type="text/jsx"></script>
+    <link href="<c:url value="/static/css/short_doctor_info.css" />" rel="stylesheet"/>
 
 
     <%--<title>jQuery UI Datepicker - Default functionality</title>--%>
@@ -32,7 +33,8 @@
 </head>
 <body>
 
-<div id="container"></div>
+
+<div id="container" style="margin: 0 auto;"></div>
 <script type="text/jsx">
 
     React.render(<Doctors/>, document.getElementById("container"));

@@ -12,7 +12,7 @@ var Doctors = React.createClass({
 
     componentDidMount: function () {
 
-        $.get("/zocdoc/rest/doctor", function (result) {
+        $.get("/zocdoc/rest/doctor/all", function (result) {
             this.setState({
                 doctors: result
             });
@@ -21,8 +21,12 @@ var Doctors = React.createClass({
 
     render: function () {
 
-        var doctors = this.state.doctors.map(function (doctor) {
-            return <Doctor doctor = {doctor} />;
+        var doctors = this.state.doctors.map(function (doctor, index) {
+            console.log(index);
+            if (index === 0)
+                return <Doctor doctor={doctor} first={true}/>;
+            else
+                return <Doctor doctor={doctor} first={false}/>;
         });
 
         return (
