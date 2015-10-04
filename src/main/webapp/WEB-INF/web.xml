@@ -9,7 +9,7 @@
         <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>com.zocdoc.api</param-value>
+            <param-value>com.zocdoc</param-value>
         </init-param>
         <init-param>
             <param-name>com.sun.jersey.config.feature.DisableWADL</param-name>
@@ -23,6 +23,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/rest/*</url-pattern>
+        <url-pattern>/app/*</url-pattern>
     </servlet-mapping>
 </web-app>

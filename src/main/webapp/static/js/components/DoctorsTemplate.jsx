@@ -12,7 +12,7 @@ var Doctors = React.createClass({
 
     componentDidMount: function () {
 
-        $.get("/zocdoc/rest/doctor/all", function (result) {
+        $.get("/zocdoc/app/api/doctor/all", function (result) {
             this.setState({
                 doctors: result
             });

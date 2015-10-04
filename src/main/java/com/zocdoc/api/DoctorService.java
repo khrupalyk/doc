@@ -19,7 +19,7 @@ import java.util.List;
  * Created by root on 26.09.15.
  */
 
-@Path(value = "doctor")
+@Path(value = "api/doctor")
 @RequestScoped
 public class DoctorService implements Serializable {
 

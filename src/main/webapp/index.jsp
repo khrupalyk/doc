@@ -11,13 +11,7 @@
 <head>
     <title></title>
 
-    <script src="<c:url value="/static/js/react/react.js" />"></script>
-    <script src="<c:url value="/static/js/react/JSXTransformer.js" />"></script>
-    <script src="<c:url value="/static/js/react/react-with-addons.min.js" />"></script>
-    <script src="<c:url value="/static/js/jquery/jquery-1.11.3.min.js" />"></script>
-    <script src="<c:url value="/static/js/components/DoctorTemplate.jsx" />" type="text/jsx"></script>
-    <script src="<c:url value="/static/js/components/DoctorsTemplate.jsx" />" type="text/jsx"></script>
-    <link href="<c:url value="/static/css/short_doctor_info.css" />" rel="stylesheet"/>
+    <link href="<c:url value="/static/css/search_doctor_form.css" />" rel="stylesheet"/>
 
 
     <%--<title>jQuery UI Datepicker - Default functionality</title>--%>
@@ -34,14 +28,39 @@
 <body>
 
 
-<div id="container" style="margin: 0 auto;"></div>
-<script type="text/jsx">
+<div class="blue-box">
+    <div class='pad'>
+        <div class='find-doctor-intro'>
+            Find a doctor you love. <br/>
+            Get the care you need.
+        </div>
+        <div>
+            <div class='find-doctor-intro'>
+                Get started
+            </div>
+            <select>
+                <option disabled selected>Choose a Specialty</option>
+                <option value="Чебурашка">Чебурашка</option>
+                <option value="Крокодил Гена">Крокодил Гена</option>
+                <option value="Шапокляк">Шапокляк</option>
+                <option value="Лариса">Лариса</option>
+            </select>
+        </div>
+        <div class='find-doctor-intro'>
+            In
+        </div>
+        <div>
+            <select>
+                <option disabled selected>Region</option>
+                <option value="Чебурашка">Ukrainin</option>
+                <option value="Крокодил Гена">Some</option>
+                <option value="Шапокляк">Some2</option>
+                <option value="Лариса">Some4</option>
+            </select>
+        </div>
+    </div>
 
-    React.render(<Doctors/>, document.getElementById("container"));
-
-</script>
-
-
+</div>
 <%--<div id="datepicker"></div>--%>
 <%--<script>--%>
 <%--$("#datepicker").datepicker({--%>

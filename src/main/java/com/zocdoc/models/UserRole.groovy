@@ -7,29 +7,24 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Id
 import javax.persistence.JoinColumn
 import javax.persistence.ManyToOne
-import javax.persistence.OneToMany
-import javax.persistence.OneToOne
-import javax.persistence.PrimaryKeyJoinColumn
 import javax.persistence.Table
 
+/**
+ * Created by root on 03.10.15.
+ */
+
 @Entity
-@Table(name = "doctors")
-class Doctor {
+@Table(name = "users_roles")
+class UserRole {
 
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    Integer doctorId
-    String firstName
-    String lastName
-    String specialty
-    String location
+    int id
 
     @ManyToOne
-    @JoinColumn(name = "hospitalId", nullable = true)
-    Hospital hospital
-
-    @OneToOne
-    @PrimaryKeyJoinColumn
+    @JoinColumn(name = "email")
     User user
+
+    String role
 }
